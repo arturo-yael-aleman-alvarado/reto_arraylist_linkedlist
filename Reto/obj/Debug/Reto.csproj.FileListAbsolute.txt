@@ -1,0 +1,8 @@
+C:\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.csproj.AssemblyReference.cache
+C:\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.csproj.SuggestedBindingRedirects.cache
+C:\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.csproj.CoreCompileInputs.cache
+C:\Ejemplo1\RetoC#\Reto\Reto\bin\Debug\Reto.exe.config
+C:\Ejemplo1\RetoC#\Reto\Reto\bin\Debug\Reto.exe
+C:\Ejemplo1\RetoC#\Reto\Reto\bin\Debug\Reto.pdb
+C:\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.exe
+C:\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.pdb
