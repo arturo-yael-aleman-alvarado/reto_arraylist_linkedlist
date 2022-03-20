@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Reto
 {
-    internal class LinkedList
+    internal class LinkedList <T> : List<T>
     {
         public const int DEFAULT_SIZE = 10;
 
-        private Node head;
-        private Node tail;
+        private Node<T> head;
+        private Node<T> tail;
         private int size;
 
-        public void addAtTail(String data)
+        public void addAtTail(T data)
         {
-            Node node = new Node(data);
+            Node<T> node = new Node<T>(data);
 
             if (size == 0)
             {
@@ -32,9 +32,9 @@ namespace Reto
             size++;
         }
 
-        public void addAtFront(String data)
+        public void addAtFront(T data)
         {
-            Node node = new Node(data);
+            Node<T> node = new Node<T>(data);
 
             if (size == 0)
             {
@@ -52,7 +52,7 @@ namespace Reto
 
         public void remove(int index)
         {
-            Node node = findNode(index);
+            Node<T> node = findNode(index);
 
             if (node == null)
             {
@@ -95,9 +95,9 @@ namespace Reto
             size = 0;
         }
 
-        public void setAt(int index, String data)
+        public void setAt(int index, T data)
         {
-            Node node = findNode(index);
+            Node<T> node = findNode(index);
 
             if (node != null)
             {
@@ -105,11 +105,18 @@ namespace Reto
             }
         }
 
-        public String getAt(int index)
+        public T getAt(int index)
         {
-            Node node = findNode(index);
+            Node<T> node = findNode(index);
 
-            return node == null ? null : node.data;
+            if (node == null)
+            {
+                return default(T);
+            }
+            else
+            {
+                return node.data;
+            }
         }
 
         public int getSize()
@@ -117,19 +124,19 @@ namespace Reto
             return size;
         }
 
-        public LinkedListIterator getIterator()
+        public Iterator<T> getIterator()
         {
-            return new LinkedListIterator(head);
+            return new LinkedListIterator<T>(head);
         }
 
-        private Node findNode(int index)
+        private Node<T> findNode(int index)
         {
             if (index < 0 || index >= size)
             {
                 return null;
             }
 
-            Node node = head;
+            Node<T> node = head;
             int currentIndex = 0;
 
             while (currentIndex != index)

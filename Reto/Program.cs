@@ -10,30 +10,30 @@ namespace Reto
     {
         static void Main(string[] args)
         {
-            ArrayList team1 = new ArrayList();
-            ArrayList team2 = new ArrayList();
-            ArrayList team3 = new ArrayList();
+            Metodo(new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>());
+            Metodo(new LinkedList<String>(), new LinkedList<String>(), new LinkedList<String>());
+        }
+            static void Metodo(List<String> team1, List<String> team2, List<String> team3)
+        {
+            List<Double> doubles = new ArrayList<Double>();
 
             team1.addAtTail("Rita");
             team1.addAtTail("Antonio");
             team1.addAtTail("Santiago");
-            team1.addAtTail("Diego");
             team1.addAtTail("Najera");
 
             team2.addAtFront("Aldo");
             team2.addAtFront("Ignacio");
             team2.addAtFront("Arturo");
-            team2.addAtFront("Teresa");
             team2.addAtFront("Rebeca");
 
             team3.addAtFront("Miguel");
             team3.addAtFront("Angel");
-            team3.addAtFront("Citlalli");
             team3.addAtFront("Paco");
             team3.addAtFront("Adrian");
             team3.addAtFront("Ronaldo");
 
-            ArrayListIterator iterator;
+            Iterator<String> iterator;
 
             iterator = team1.getIterator();
 

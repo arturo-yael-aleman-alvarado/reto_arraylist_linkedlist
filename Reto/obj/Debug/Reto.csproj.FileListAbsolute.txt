@@ -6,3 +6,11 @@ C:\Ejemplo1\RetoC#\Reto\Reto\bin\Debug\Reto.exe
 C:\Ejemplo1\RetoC#\Reto\Reto\bin\Debug\Reto.pdb
 C:\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.exe
 C:\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.pdb
+E:\Semestre 4\Programacion orientada a objetos\Ejemplo1\RetoC#\Reto\Reto\bin\Debug\Reto.exe.config
+E:\Semestre 4\Programacion orientada a objetos\Ejemplo1\RetoC#\Reto\Reto\bin\Debug\Reto.exe
+E:\Semestre 4\Programacion orientada a objetos\Ejemplo1\RetoC#\Reto\Reto\bin\Debug\Reto.pdb
+E:\Semestre 4\Programacion orientada a objetos\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.csproj.AssemblyReference.cache
+E:\Semestre 4\Programacion orientada a objetos\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.csproj.SuggestedBindingRedirects.cache
+E:\Semestre 4\Programacion orientada a objetos\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.csproj.CoreCompileInputs.cache
+E:\Semestre 4\Programacion orientada a objetos\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.exe
+E:\Semestre 4\Programacion orientada a objetos\Ejemplo1\RetoC#\Reto\Reto\obj\Debug\Reto.pdb

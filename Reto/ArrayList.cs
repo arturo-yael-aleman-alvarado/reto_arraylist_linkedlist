@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Reto
 {
-    internal class ArrayList
+    internal class ArrayList<T> : List<T>
     {
         public const int DEFAULT_SIZE = 2;
-        private String[] array;
+        private T[] array;
         private int size;
 
         public static String getName()
@@ -19,15 +19,15 @@ namespace Reto
 
         public ArrayList()
         {
-            array = new String[DEFAULT_SIZE];
+            array = (T[])new T[DEFAULT_SIZE];
         }
 
         public ArrayList(int size)
         {
-            array = new String[size];
+            array = (T[])new T[size];
         }
 
-        public void addAtTail(String data)
+        public void addAtTail(T data)
         {
 
             if (size == array.Length)//Le puse mayuscula a Length en la primera letra
@@ -39,7 +39,7 @@ namespace Reto
             size++;
         }
 
-        public void addAtFront(String data)
+        public void addAtFront(T data)
         {
 
             if (size == array.Length)
@@ -68,7 +68,7 @@ namespace Reto
                 Array.Copy(array, index + 1, array, index, size - 1 - index);
             }
 
-            array[size - 1] = null;
+            array[size - 1] = default(T);
             size--;
         }
 
@@ -76,12 +76,12 @@ namespace Reto
         {
             for (int i = 0; i < size; i++)
             {
-                array[i] = null;
+                array[i] = default(T);
             }
             size = 0;
         }
 
-        public void setAt(int index, String data)
+        public void setAt(int index, T data)
         {
             if (index >= 0 && index < size)
             {
@@ -89,14 +89,21 @@ namespace Reto
             }
         }
 
-        public String getAt(int index)
+        public T getAt(int index)
         {
-            return index >= 0 && index < size ? array[index] : null;
+            if (index >= 0 && index < size)
+            {
+                return array[index];
+            }
+            else
+            {
+                return default(T);
+            }
         }
 
-        public ArrayListIterator getIterator()
+        public Iterator<T> getIterator()
         {
-            return new ArrayListIterator(this);
+            return new ArrayListIterator<T>(this);
         }
 
         public int getSize()
@@ -106,7 +113,7 @@ namespace Reto
 
         private void increaseArraySize()
         {
-            String[] newArray = new String[array.Length * 2];
+            T[] newArray = (T[])new T[array.Length * 2];
 
             for (int i = 0; i < size; i++)
             {

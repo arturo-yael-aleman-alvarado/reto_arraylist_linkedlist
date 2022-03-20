@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Reto
 {
-    internal class LinkedListIterator
+    internal class LinkedListIterator <T> : Iterator<T>
     {
-        public Node currentNode;//Le puse public
+        public Node<T> currentNode;//Le puse public
 
-        public LinkedListIterator(Node startNode)//Le puse public
+        public LinkedListIterator(Node<T> startNode)//Le puse public
         {
             currentNode = startNode;
         }
@@ -20,9 +20,9 @@ namespace Reto
             return currentNode != null;
         }
 
-        public String next()
+        public T next()
         {
-            String data = currentNode.data;
+            T data = currentNode.data;
 
             currentNode = currentNode.next;
 
